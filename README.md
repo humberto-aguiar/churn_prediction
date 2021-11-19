@@ -1,4 +1,4 @@
-# churn_prediction
+# Customer Churn Prediction
 
 ## Customer Churn Prediction for a company
 
