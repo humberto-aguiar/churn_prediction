@@ -10,6 +10,7 @@ __pycache__/
 *.csv
 *.json
 *.pkl
+*consultation*.ipynb
 
 # Distribution / packaging
 .Python
