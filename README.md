@@ -34,6 +34,25 @@ My strategy to solve this challenge was:
 **Step 06. Feature Selection:** Select the most important features or all of them since we don't have many available.
 
 **Step 07. Machine Learning Modelling:** Test different models and select the best in terms of performance and resource usage.
+### One-Class Classification for severely skewed distributions:
+ - One-Class SVM
+ - Isolation Forest
+ - Minimum Covariance Determinant
+ - Local Outlier Factor
+
+### One-Class Classification for severely skewed distributions:
+- Decision Tree CART
+- KNN
+- Bagged Decision Trees BAG
+- Random Forest RF
+- Extra Trees
+- Catboost
+- XGBoost
+- GaussianNB
+- LogisticRegression
+- Gradient Boosting Classifier
+- BalancedRandomForestClassifier
+- LogisticRegression, SGDClassifier (Linear)
 
 **Step 08. Hyperparameter Fine Tunning:** Apply tunning to the parameters.
 
