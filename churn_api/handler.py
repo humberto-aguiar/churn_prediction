@@ -1,6 +1,6 @@
 from flask import Flask, request, Response
 import pandas as pd 
-import pickle
+import os
 from  churn.Churn import churnEvaluation
 
 app = Flask (__name__ )
@@ -35,4 +35,5 @@ def predict():
 
 #app.run( host='0.0.0.0' )
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', debug = True )
+    port = os.environ.get("PORT", 5000)
+    app.run(host = '0.0.0.0', port = port ) #debug = True

@@ -5,11 +5,11 @@ class churnEvaluation( object ):
     def __init__(self): #, preprocessing_pipe, model_pipe
 
         # defining preprocessing pipeline
-        prepr_path = '/home/humberto/DS/churn_prediction/churn_api/features/'
+        prepr_path = 'features/'
         self.preprocessing_pipe = pickle.load( open( prepr_path + 'preprocessing_pipe.pkl', 'rb') )
 
         # defining model pipeline
-        model_path = '/home/humberto/DS/churn_prediction/churn_api/models/'
+        model_path = 'models/'
         self.model_pipe = pickle.load( open( model_path + 'model_pipe.pkl', 'rb') )
 
     # Preprocessing
