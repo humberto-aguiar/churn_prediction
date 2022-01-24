@@ -1,4 +1,4 @@
-# churn_prediction
+# Customer Churn Prediction
 
 ## Customer Churn Prediction for a company
 
@@ -6,31 +6,59 @@
 
 # 1. Business Problem.
 
+TopBank is having increasing numbers of customer churn and needs a way to reduce these numbers.
+
 # 2. Business Assumptions.
 
+
 # 3. Solution Strategy
+- Explore data to:
+    - Answer business questions
+    - Generate Insights
+
+- Create a ML classification model to predict customers that are more likely to churn
+- Offer these customers discount coupons
 
 My strategy to solve this challenge was:
 
-**Step 01. Data Description:**
+**Step 01. Data Description:** Analyze Data briefly and its statistics to have a basic idea of the granularity and general info of the data.
 
-**Step 02. Feature Engineering:**
+**Step 02. Feature Engineering:** If possible derive new features from the dataset. There are not many features available so I don't expect new features to be derived.
 
-**Step 03. Data Filtering:**
+**Step 03. Data Filtering:** If there are some Irregularities, remove them.
 
-**Step 04. Exploratory Data Analysis:**
+**Step 04. Exploratory Data Analysis:** Explore the data with respect to frequency, do a bivariate analysis with respect to response variable, analyze some business hypothesis to generate insights.
 
-**Step 05. Data Preparation:**
+**Step 05. Data Preparation:** Apply methods to balance the dataset such as: oversampling, downsampling, SMOTE.
 
-**Step 06. Feature Selection:**
+**Step 06. Feature Selection:** Select the most important features or all of them since we don't have many available.
 
-**Step 07. Machine Learning Modelling:**
+**Step 07. Machine Learning Modelling:** Test different models and select the best in terms of performance and resource usage.
+### One-Class Classification for severely skewed distributions:
+ - One-Class SVM
+ - Isolation Forest
+ - Minimum Covariance Determinant
+ - Local Outlier Factor
 
-**Step 08. Hyperparameter Fine Tunning:**
+### One-Class Classification for severely skewed distributions:
+- Decision Tree CART
+- KNN
+- Bagged Decision Trees BAG
+- Random Forest RF
+- Extra Trees
+- Catboost
+- XGBoost
+- GaussianNB
+- LogisticRegression
+- Gradient Boosting Classifier
+- BalancedRandomForestClassifier
+- LogisticRegression, SGDClassifier (Linear)
 
-**Step 09. Convert Model Performance to Business Values:**
+**Step 08. Hyperparameter Fine Tunning:** Apply tunning to the parameters.
 
-**Step 10. Deploy Modelo to Production:**
+**Step 09. Convert Model Performance to Business Values:** Calculate the revenue the model could generate if put into production.
+
+**Step 10. Deploy Modelo to Production:** Deploy the model on a free cloud server building an API.
 
 # 4. Top 3 Data Insights
 
@@ -61,3 +89,5 @@ My strategy to solve this challenge was:
 # LICENSE
 
 # All Rights Reserved - Comunidade DS 2021
+
+# Author Humberto
