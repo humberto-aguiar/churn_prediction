@@ -4,9 +4,11 @@
 
 #### This project was made by Humberto Aguiar.
 
+#### README not completed yet, please refer to this [link](https://github.com/humberto-aguiar/churn_prediction/blob/main/notebooks/churn_01.ipynb) to see the notebook of the finished project.
+
 # 1. Business Problem.
 
-TopBank is having increasing numbers of customer churn and needs a way to reduce these numbers.
+A Bank is experimenting a increase in numbers of customer churn and needs a way to reduce these numbers.
 
 # 2. Business Assumptions.
 
