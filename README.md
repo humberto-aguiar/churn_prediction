@@ -67,8 +67,4 @@ My strategy to solve this challenge was:
 
 # 10. Next Steps to Improve
 
-# LICENSE
-
-# All Rights Reserved - Comunidade DS 2021
-
 # Author Humberto
