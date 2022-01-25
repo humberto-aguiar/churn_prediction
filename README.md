@@ -6,7 +6,7 @@
 
 A Data Science Project on a Churn Dataset.
 
-If you wish, you may interact with the final solutions data products I built:
+If you wish, you may interact with the final data products I built:
 
 [<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white"/>](https://churn-streamlit-humberto.herokuapp.com/)
 
