@@ -10,21 +10,20 @@ If you wish, you may interact with the final solutions data products I built:
 
 [<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white"/>](https://churn-streamlit-humberto.herokuapp.com/)
 
-#### This project was made by Humberto Aguiar.
-
+#### This project was carried by [Humberto Aguiar](https://www.linkedin.com/in/humberto-aguiar-840108179/).
 # 1. Business Problem.
 
-A Bank is experimenting an increase in numbers of customer churn and needs a way to reduce these numbers.
+A bank is experimenting an increase in numbers of customer churn and needs to find a method to reduce these numbers.
 
 # 2. Business Assumptions.
-- Customer Churn can be predicted.
+- Customer Churn can be predicted to some degree.
 - Customer Churn can be prevented with incentives such as coupons/gift cards.
 - Customer Churn is affected by factors present in the dataset.
 
 # 3. Solution Strategy
 - Explore data to:
     - Answer business questions.
-    - Generate nsights.
+    - Generate insights.
 
 My strategy to solve this challenge was:
 - Create an ML classification model to predict customers that are more likely to churn.
@@ -33,7 +32,7 @@ My strategy to solve this challenge was:
 
 **Step 01. Data Description:** Analyze Data briefly and its statistics to have a basic idea of the granularity and general info of the data.
 
-**Step 02. Feature Engineering:** If possible derive new features from the dataset. There are not many features available so I don't expect new features to be derived.
+**Step 02. Feature Engineering:** If possible derive new features from the dataset. There are not several features available this way, I don't expect new features to be derived.
 
 **Step 03. Data Filtering:** If there are some Irregularities, remove them.
 
@@ -69,13 +68,13 @@ This insight can be useful when prioritizing prone-to-churn customers since thos
 
 # 5. Machine Learning Model Applied
 Before applying any ML models I tested several oversampling, downsampling, and a combination of both procedures using a KNN Classifier and measured ROC AUC to select the best method to increase the final ML performance.
-[](./images)
+![sampling](./reports/figures/sampling.png)
 
 Unfortunately, most methods didn't increase performance significantly when compared to no sampling procedure at all, therefore I chose the best one since it both increased performance and reduced variance its variance.
 
 I also tested the following models and selected LGBMClassifier since it presented one of the best ROC AUC scores, as well as a good combination between recall and precision.
 
-|Model|roc_auc|recall|precision|accuracy|
+|Model|ROC AUC|Recall|Precision|Accuracy|
 |:-:|:-:|:-:|:-:|:-:|
 |  BalancedRandomForestClassifier|0.788463|0.733129|0.382574|0.704187|
 |                  LGBMClassifier|0.787750|0.589264|0.475864|0.783813|
@@ -87,7 +86,7 @@ I also tested the following models and selected LGBMClassifier since it presente
 
 # 6. Machine Learning Model Performance
 
-For the selected threshold the performance of the model is the following:
+For the selected threshold the performance of the tuned model is the following:
 
 ROC AUC Score= 0.7187
 
@@ -99,7 +98,7 @@ ROC AUC Score= 0.7187
 
 Therefore the model was able to correctly predict 75% of churns, even though this was obtained by reducing the threshold below 50%, which decreased both precision and accuracy, the result is satisfactory given that misclassifying a customer as not churn and losing the customer by not taking action, is worse than misclassifying a customer as churn and giving them a gift card.
 
-[](./images/lift.png)
+![lift](./reports/figures/lift.png)
 
 We can see that by prioritizing, for example, the 20% customers that the model gave the highest prediction of churning is more than 2.5x more effective than randomly trying to find the churning customers.
 
@@ -135,6 +134,6 @@ Feel free to interact with the Web App I developed:
 
 # Author Humberto
 
-If I can be of assistance, or you have any suggestions please do not hesitate to contact me:
+If I can be of assistance, or you have any recommendations please do not hesitate to contact me:
 
 [<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/humberto-aguiar-840108179/)
