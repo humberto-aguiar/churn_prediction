@@ -121,7 +121,7 @@ Finishing this first iteration in the CRISP cycle I built and deployed two appli
 
 Feel free to interact with the Web App I developed:
 
-[<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white"/>](https://rossmann-streamlit-app.herokuapp.com/)
+[<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white"/>](https://churn-streamlit-humberto.herokuapp.com/)
 
 # 9. Lessons Learned
 - Oversampling and downsampling methods won't always do wonders to performance as they may seem to do in some references.
